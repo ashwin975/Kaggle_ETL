@@ -30,3 +30,5 @@ EDA was carried out with postgres, ensuring consistent data types and addition o
 - Finally, the data flows into Tableau, a popular visualization tool used to create interactive and shareable dashboards. Tableau's ability to connect directly to PostgreSQL allows for dynamic data exploration and visualization.
 
 Overall, this workflow efficiently moves data from extraction through to visualization, enabling users to derive insights and make data-driven decisions effectively.
+
+[Tableau Dashboard Link](https://public.tableau.com/app/profile/ashwin.singaram/viz/Avocados_17182429828380/PriceOverview)
