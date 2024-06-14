@@ -1,18 +1,32 @@
 # Kaggle_ETL
 
-# Azure-Unity-Catalog-Project
-
 ## Introduction:
-- In this project, I have executed an end-to-end ingestion and transformation pipeline based on Databricks [Medallion Framework](https://www.databricks.com/glossary/medallion-architecture). The project aims to demonstrate the seamless integration of Azure services with Unity Catalog, facilitating efficient data processing and analysis.
+The primary objective of this project is to create a robust data pipeline that facilitates the extraction of diverse datasets from Kaggle, processes and refines these datasets using Python and pandas, and stores the processed data in a PostgreSQL database for secure, scalable access. Finally, the data is dynamically visualized using Tableau, providing stakeholders with powerful, actionable insights through interactive dashboards.
 
-🥉 Bronze: Initial Ingestion of the raw data as External tables stored in Delta lake format
-  
-🥈 Silver: Initial Transformation of the raw data as Managed tables stored in Delta lake format
+## Tech Stack:
 
-🥇 Gold: Final transformation of the raw data as Managed tables stored in Delta lake format. 
-
-The resulting Managed tables stored in Delta lake format represent the curated dataset ready for comprehensive analysis.
+- ✅ Kaggle API: Utilized for accessing a wide range of datasets available on Kaggle
+- ✅ Python and pandas: Allowing for efficient data cleaning, transformation, and preparation
+- ✅ PostgreSQL: Chosen for its robustness and reliability as a relational database
+- ✅ Tableau: enabling end-users to interact with the data through insightful dashboards
 
 ## 🏛️ Architecture:
 
-![alt text](https://github.com/ashwin975/Azure-Unity-Catalog-Project/blob/main/Azure%20Unity%20Catalog%20Project.png)
+![alt text](https://github.com/ashwin975/Kaggle_ETL/blob/main/Kaggle%20ETL.png)
+
+## 𝍖 Data Extraction: 
+- The pipeline begins with the Kaggle API, which is used to extract data. This is a common approach for accessing a vast range of datasets provided by Kaggle for various analytical purposes.
+Chosen dataset with api - neuromusic/avocado-prices 
+
+## 📝 Data Processing: 
+- The extracted data is then processed using Python combined with the pandas library, a powerful duo for data manipulation and analysis. This stage typically involves cleaning, transforming, and preparing the data for loading into a database.
+Once cleaned, server setup and connection was established with PostGres Local storage, it could also be deployed on cloud within postgres
+
+## 💿 Data Storage: 
+- The processed data is stored in a PostgreSQL server. PostgreSQL is a robust, open-source relational database system known for its reliability and feature set, making it an excellent choice for handling complex queries and large volumes of data.
+EDA was carried out with postgres, ensuring consistent data types and addition of primary key column
+
+## 📊 Data Visualization: 
+- Finally, the data flows into Tableau, a popular visualization tool used to create interactive and shareable dashboards. Tableau's ability to connect directly to PostgreSQL allows for dynamic data exploration and visualization.
+
+Overall, this workflow efficiently moves data from extraction through to visualization, enabling users to derive insights and make data-driven decisions effectively.
