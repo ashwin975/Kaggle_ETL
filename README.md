@@ -32,3 +32,5 @@ EDA was carried out with postgres, ensuring consistent data types and addition o
 Overall, this workflow efficiently moves data from extraction through to visualization, enabling users to derive insights and make data-driven decisions effectively.
 
 [Tableau Dashboard Link](https://public.tableau.com/app/profile/ashwin.singaram/viz/Avocados_17182429828380/PriceOverview)
+
+![alt text](https://github.com/ashwin975/Kaggle_ETL/blob/main/Dash_snap.png)
